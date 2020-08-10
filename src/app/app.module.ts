@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
-import {MatBadgeModule} from '@angular/material/badge';
-import {MatButtonModule} from '@angular/material/button';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatButtonModule } from '@angular/material/button';
 import { AccommodationsComponent } from './accommodations/accommodations.component';
 import { RoomsComponent } from './accommodations/rooms/rooms.component';
 import { FoodAndBeverageComponent } from './food-and-beverage/food-and-beverage.component';
@@ -24,7 +25,12 @@ import { OffersComponent } from './offers/offers.component';
 import { AuthComponent } from './auth/auth.component';
 import { SignInComponent } from './auth/sign-in/sign-in.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
-import {AppRoutingModule} from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -46,7 +52,11 @@ import {AppRoutingModule} from './app-routing.module';
     OffersComponent,
     AuthComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    HomeComponent,
+    HeaderComponent,
+    SidenavListComponent,
+    NavtabsComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +64,9 @@ import {AppRoutingModule} from './app-routing.module';
     MaterialModule,
     MatBadgeModule,
     MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

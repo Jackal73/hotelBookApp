@@ -9,6 +9,7 @@ import { WeddingsComponent } from './weddings/weddings.component';
 import { OffersComponent } from './offers/offers.component';
 import { SignInComponent } from './auth/sign-in/sign-in.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
+import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
   { path: 'accommodations', component: AccommodationsComponent },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'weddings', component: WeddingsComponent },
   { path: 'offers', component: OffersComponent },
   { path: 'sign-in', component: SignInComponent },
-  { path: 'sign-up', component: SignUpComponent }
+  { path: 'sign-up', component: SignUpComponent },
+  { path: '', component: HomeComponent}
 ];
 
 @NgModule({
